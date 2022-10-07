@@ -26,8 +26,10 @@
 </p>
 
 ## Technologies used
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<div>
+	<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+	<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+</div>
 
 ## Built with
 - Semantic HTML5 markup
@@ -37,9 +39,9 @@
 - Responsive Web Design
 
 ## Access the project
-Visit my solution on FrontEnd Mentor, [here](https://www.frontendmentor.io/solutions/)
+Visit my solution on FrontEnd Mentor, [here](https://www.frontendmentor.io/solutions/product-preview-card-Yx2ICVYURq)
 
-Visit the live site, [here]()
+Visit the live site, [here](https://sofmagon.github.io/product-card/)
 
 ## Author
 - All my links: [SOFMAGON](https://beacons.ai/sofmagon)
