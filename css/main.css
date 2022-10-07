@@ -1,0 +1,143 @@
+/* === CUSTOM PROPERTIES === */
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream:  hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --montserrat: 'Montserrat', sans-serif;
+    --fraunces: 'Fraunces', serif;
+}
+
+/* === GLOBALES === */
+html {
+    /*! Reset para REMS: El 62.5% de 16px = 10px; es decir, 1rem = 10px */
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--cream);
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    width: 65rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__imagen {
+    background-image: url(../images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.card__contenido {
+    font-family: var(--montserrat);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 3rem 3rem 0;
+}
+
+.card__titulo {
+    font-family: var(--montserrat);
+    font-size: 1.2rem;
+    color: var(--darkGrayishBlue);
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin: 0;
+}
+
+.card__heading {
+    font-family: var(--fraunces);
+    color: var(--veryDarkBlue);
+    font-size: 4rem;
+}
+
+.card__descripcion {
+    color: var(--darkGrayishBlue);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.precios {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+}
+
+.precios__descuento {
+    color: var(--darkCyan);
+    font-family: var(--fraunces);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.precios__anterior {
+    color: var(--darkGrayishBlue);
+    font-size: 1.3rem;
+    text-decoration: line-through;
+}
+
+.boton {
+    background-color: var(--darkCyan);
+    padding: 1.5rem 2rem;
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.boton:hover {
+    background-color: var(--veryDarkBlue);
+}
+
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: unset;
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 90%;
+        min-height: 650px;
+    }
+
+    .card__imagen {
+        background-image: url(../images/image-product-mobile.jpg);
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .card__contenido {
+        padding: 2.5rem;
+    }
+
+    .card__heading {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .card__descripcion {
+        margin: 0;
+        font-size: 1.45rem;
+    }
+
+    .precios__descuento {
+        margin: 1.7rem 0;
+    }
+}
